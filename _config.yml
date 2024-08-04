@@ -23,10 +23,10 @@ author:
   # Biographic information
   avatar           : "color.jpg" # the name of the image file in /images/author
   name             : "Jingyi Tang"
-  pronouns         : "he" # example: "she/her"  
-  bio              : "AI Master at ICT of CAS"
+  pronouns         : # example: "she/her"  
+  bio              : "AI Master at Institue of Computing Technology, CAS"
   location         : "Beijing"
-  employer         : "Peking University,ICT of CAS"
+  employer         : "Institue of Computing Technology, CAS"
   uri              : # URL
   email            : "tangjingyi23s@ict.ac.cn" 
 
