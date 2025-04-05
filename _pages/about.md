@@ -13,7 +13,7 @@ My research interests include LLM, Active Learning(AL) and Multi-modal Large Lan
 
 Selected Publications
 ======
-- 
+- [Exploring Hallucination of Large Multimodal Models in Video Understanding: Benchmark, Analysis and Mitigation](https://arxiv.org/abs/2503.19622),2025.03
 
 Selected Awards
 ======
