@@ -5,7 +5,6 @@ permalink: /publication/2025-11-08-klear-agentforge
 date: 2025-11-08
 venue: "Technical report"
 paperurl: "https://arxiv.org/abs/2511.05951"
-citation: "Klear Team. Klear-AgentForge Technical Report. Technical report, 2025."
 excerpt: "A technical report on Klear-AgentForge, a guided perturbation learning framework for data-centric AI agents."
 ---
 
