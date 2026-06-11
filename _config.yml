@@ -3,7 +3,7 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# `jekyll serve -l -H localhost`. If you change this file, please restart the
 # server process.
 
 # Basic Site Settings
@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Jingyi Tang / Home Page"
 title_separator          : "-"
 name                     : &name "Jingyi Tang"
-description              : &description "personal description"
+description              : &description "LLMs, MLLMs, and test-time scaling"
 url                      : https://colordavid.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ColorDavid/ColorDavid.github.io"
@@ -23,20 +23,20 @@ author:
   # Biographic information
   avatar           : "color.jpg" # the name of the image file in /images/author
   name             : "Jingyi Tang"
-  pronouns         : # example: "she/her"  
-  bio              : "AI Master at Institue of Computing Technology, CAS"
+  pronouns         : # example: "she/her"
+  bio              : "M.Eng. graduate, Institute of Computing Technology, CAS"
   location         : "Beijing"
-  employer         : "Institue of Computing Technology, CAS"
+  employer         : "Institute of Computing Technology, CAS"
   uri              : # URL
-  email            : "tangjingyi23s@ict.ac.cn" 
+  email            : "tangjingyi23s@ict.ac.cn"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=V3bIsMIAAAAJ"
   impactstory      : # URL
-  orcid            : #"http://orcid.org/yourorcidurl"
+  orcid            : # "http://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
 
   # Repositories and software development
@@ -44,11 +44,11 @@ author:
   codepen          : # Username
   dribbble         : # Username
   github           : "ColorDavid"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  kaggle           : # Username
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
   # Social media
-  bluesky          : #"bsky.app" # Replace this with you Bluesky username
+  bluesky          : # "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
