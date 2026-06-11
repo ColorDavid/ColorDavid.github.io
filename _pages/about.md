@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a 2026 Master of Engineering graduate from the [Institute of Computing Technology](http://www.ict.ac.cn/), Chinese Academy of Sciences, advised by [Associate Prof. Liang Li](https://scholar.google.com/citations?user=Q-4mZnQAAAAJ&hl=zh-CN). Before that, I received my Bachelor's degree in Data Science from [Yuanpei College](https://yuanpei.pku.edu.cn/), Peking University in 2023.
+I am a 2026 Master of Engineering graduate from the [Institute of Computing Technology](http://www.ict.ac.cn/), Chinese Academy of Sciences, advised by [Prof. Liang Li](https://scholar.google.com/citations?user=Q-4mZnQAAAAJ&hl=zh-CN). Before that, I received my Bachelor's degree in Data Science from [Yuanpei College](https://yuanpei.pku.edu.cn/), Peking University in 2023.
 
 My research interests include large language models (LLMs), multimodal large language models (MLLMs), and test-time scaling (TTS), with a focus on reliable multimodal understanding and evaluation-driven scaling. If you are interested in my work, please feel free to contact me.
 
