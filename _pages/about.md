@@ -14,8 +14,8 @@ My research interests include large language models (LLMs), multimodal large lan
 Selected Publications
 ======
 
-- [SpatialWorld: Benchmarking Interactive Spatial Reasoning for Multimodal Language Models](https://arxiv.org/abs/2606.09669), arXiv preprint, 2026.
-- [Evaluation-driven Scaling for Scientific Discovery: from LLM Agents to Pareto Systems](https://arxiv.org/abs/2604.19341), technical report, 2026.
+- [SpatialWorld: Benchmarking Interactive Spatial Reasoning of Multimodal Agents in Real-World Tasks](https://arxiv.org/abs/2606.09669), arXiv preprint, 2026.
+- [Evaluation-driven Scaling for Scientific Discovery](https://arxiv.org/abs/2604.19341), technical report, 2026.
 - [Pixels, Patterns, but No Poetry: To See the World like Humans](https://arxiv.org/abs/2507.16863), accepted to ICML 2026 Position Paper Track.
 - [Klear-AgentForge Technical Report](https://arxiv.org/abs/2511.05951), technical report, 2025.
 - [Exploring Hallucination of Large Multimodal Models in Video Understanding: Benchmark, Analysis and Mitigation](https://arxiv.org/abs/2503.19622), TACL submission, minor revision, 2025.
