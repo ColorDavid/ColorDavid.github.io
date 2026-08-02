@@ -1,8 +1,9 @@
 {% assign post = include.post %}
 <article class="publication-item" itemscope itemtype="https://schema.org/ScholarlyArticle">
+  <time class="publication-year" datetime="{{ post.date | date: "%Y" }}">{{ post.date | date: "%Y" }}</time>
+  <div class="publication-item__body">
   <div class="publication-heading">
     <h3 itemprop="headline">{% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>{% else %}<a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endif %}</h3>
-    <time class="publication-year" datetime="{{ post.date | date: "%Y" }}">{{ post.date | date: "%Y" }}</time>
   </div>
   <p class="publication-authors" itemprop="author">{{ post.card_authors | default: post.authors }}</p>
   {% if post.author_note %}<p class="publication-note">{{ post.author_note }}</p>{% endif %}
@@ -16,4 +17,5 @@
       {% if post.modelurl %}<a href="{{ post.modelurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>{% endif %}
     </span>
   </p>
+  </div>
 </article>

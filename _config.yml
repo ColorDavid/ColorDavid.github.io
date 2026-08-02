@@ -24,7 +24,7 @@ author:
   avatar           : "color.jpg" # the name of the image file in /images/author
   name             : "Jingyi Tang"
   pronouns         : # example: "she/her"
-  bio              : "Researcher in multimodal AI"
+  bio              :
   location         : "Beijing"
   employer         :
   uri              : # URL
