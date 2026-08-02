@@ -7,7 +7,7 @@ layout: default
   <article class="page publication-detail" itemscope itemtype="https://schema.org/ScholarlyArticle">
     <div class="page__inner-wrap">
       <a class="back-link" href="{{ '/publications/' | relative_url }}">← All publications</a>
-      <p class="publication-detail__venue">{{ page.venue }} · {{ page.date | date: "%Y" }}</p>
+      <p class="publication-detail__venue"><i class="fas fa-book-open" aria-hidden="true"></i>{{ page.venue }} · {{ page.date | date: "%Y" }}</p>
       <h1 class="publication-detail__title" itemprop="headline">{{ page.title }}</h1>
       <p class="publication-authors" itemprop="author">{{ page.authors }}</p>
       {% if page.author_note %}<p class="publication-note">{{ page.author_note }}</p>{% endif %}
@@ -18,10 +18,7 @@ layout: default
         {% if page.dataurl %}<a href="{{ page.dataurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-database" aria-hidden="true"></i>Data</a>{% endif %}
         {% if page.modelurl %}<a href="{{ page.modelurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>{% endif %}
       </p>
-      {% if page.excerpt %}<p class="publication-detail__summary" itemprop="description">{{ page.excerpt }}</p>{% endif %}
       {% if page.thumbnail %}<figure class="publication-detail__figure"><img src="{{ page.thumbnail }}" alt="{{ page.title }} project overview" loading="lazy"></figure>{% endif %}
-      {% if page.highlights %}<section class="publication-detail__overview"><h2>Overview</h2><p>{{ page.highlights }}</p></section>{% endif %}
-      <div class="publication-detail__content" itemprop="text">{{ content }}</div>
     </div>
   </article>
 </div>

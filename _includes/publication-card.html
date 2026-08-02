@@ -1,14 +1,13 @@
 {% assign post = include.post %}
 <article class="publication-item" itemscope itemtype="https://schema.org/ScholarlyArticle">
   <div class="publication-heading">
-    <h3 itemprop="headline"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <h3 itemprop="headline">{% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>{% else %}<a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endif %}</h3>
     <time class="publication-year" datetime="{{ post.date | date: "%Y" }}">{{ post.date | date: "%Y" }}</time>
   </div>
   <p class="publication-authors" itemprop="author">{{ post.card_authors | default: post.authors }}</p>
   {% if post.author_note %}<p class="publication-note">{{ post.author_note }}</p>{% endif %}
-  <p class="publication-summary" itemprop="description">{{ post.excerpt }}</p>
   <p class="publication-meta-row">
-    <span class="publication-venue">{{ post.venue }}</span>
+    <span class="publication-venue"><i class="fas fa-book-open" aria-hidden="true"></i>{{ post.venue }}</span>
     <span class="publication-resources" aria-label="Publication resources">
       {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i>Paper</a>{% endif %}
       {% if post.projecturl %}<a href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>Project</a>{% endif %}
