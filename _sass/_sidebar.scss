@@ -157,32 +157,39 @@
 }
 
 .author__quick-links {
-  display: flex;
-  gap: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, max-content));
+  gap: 0.4rem 0.85rem;
   margin-top: 0.7rem;
   font-family: $sans-serif;
 
   a {
-    display: inline-grid;
-    width: 1.85rem;
-    height: 1.85rem;
-    place-items: center;
-    border: 1px solid $border-color;
-    border-radius: 50%;
+    display: inline-flex;
+    gap: 0.42rem;
+    align-items: center;
     color: #53606d;
+    font-size: $type-size-6;
     text-decoration: none;
-    transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+    transition: color 0.15s ease;
 
     &:hover,
     &:focus {
-      border-color: $link-color;
       color: $link-color;
-      transform: translateY(-1px);
     }
   }
 
   i {
-    font-size: 0.93rem;
+    display: inline-grid;
+    width: 1.65rem;
+    height: 1.65rem;
+    place-items: center;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    font-size: 0.82rem;
+  }
+
+  @include breakpoint($large) {
+    grid-template-columns: 1fr;
   }
 }
 
