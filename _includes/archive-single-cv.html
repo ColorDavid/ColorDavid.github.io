@@ -36,6 +36,9 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
+    {% if post.card_authors or post.authors %}
+      <p class="archive__item-excerpt" itemprop="author">{{ post.card_authors | default: post.authors }}</p>
+    {% endif %}
     {% if post.venue %}
       <p class="archive__item-excerpt" itemprop="description"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
     {% endif %}

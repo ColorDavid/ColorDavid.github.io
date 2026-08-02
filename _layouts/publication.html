@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<main id="main" class="profile-site" role="main">
+  <article class="publication-detail" itemscope itemtype="https://schema.org/ScholarlyArticle">
+    <a class="back-link" href="{{ '/publications/' | relative_url }}">← All publications</a>
+
+    <p class="publication-card__status">{{ page.venue }} · {{ page.date | date: "%Y" }}</p>
+    <h1 class="publication-detail__title" itemprop="headline">{{ page.title }}</h1>
+    <p class="publication-card__authors" itemprop="author">{{ page.authors }}</p>
+    {% if page.author_note %}<p class="publication-card__note">{{ page.author_note }}</p>{% endif %}
+
+    <div class="publication-card__links publication-detail__links" aria-label="Publication resources">
+      {% if page.paperurl %}<a href="{{ page.paperurl }}" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if page.projecturl %}<a href="{{ page.projecturl }}" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if page.codeurl %}<a href="{{ page.codeurl }}" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if page.dataurl %}<a href="{{ page.dataurl }}" target="_blank" rel="noopener noreferrer">Data <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if page.modelurl %}<a href="{{ page.modelurl }}" target="_blank" rel="noopener noreferrer">Model <span aria-hidden="true">↗</span></a>{% endif %}
+    </div>
+
+    {% if page.excerpt %}<p class="publication-detail__summary" itemprop="description">{{ page.excerpt }}</p>{% endif %}
+    {% if page.highlights %}<div class="publication-detail__highlights"><h2>Overview</h2><p>{{ page.highlights }}</p></div>{% endif %}
+
+    <div class="publication-detail__content" itemprop="text">
+      {{ content }}
+    </div>
+  </article>
+</main>

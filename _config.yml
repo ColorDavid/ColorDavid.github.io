@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Jingyi Tang / Home Page"
+title                    : "Jingyi Tang"
 title_separator          : "-"
 name                     : &name "Jingyi Tang"
-description              : &description "LLMs, MLLMs, and test-time scaling"
+description              : &description "Research on multimodal agents, reliable video understanding, and test-time scaling."
 url                      : https://colordavid.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ColorDavid/ColorDavid.github.io"
@@ -78,7 +78,7 @@ author:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
