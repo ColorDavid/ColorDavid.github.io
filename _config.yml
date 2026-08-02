@@ -24,9 +24,9 @@ author:
   avatar           : "color.jpg" # the name of the image file in /images/author
   name             : "Jingyi Tang"
   pronouns         : # example: "she/her"
-  bio              : "M.Eng. graduate, Institute of Computing Technology, CAS"
+  bio              : "Researcher in multimodal AI"
   location         : "Beijing"
-  employer         : "Institute of Computing Technology, CAS"
+  employer         :
   uri              : # URL
   email            : "tangjingyi23s@ict.ac.cn"
 

@@ -12,13 +12,14 @@ layout: default
       <p class="publication-authors" itemprop="author">{{ page.authors }}</p>
       {% if page.author_note %}<p class="publication-note">{{ page.author_note }}</p>{% endif %}
       <p class="publication-resources" aria-label="Publication resources">
-        {% if page.paperurl %}<a href="{{ page.paperurl }}" target="_blank" rel="noopener noreferrer">[Paper]</a>{% endif %}
-        {% if page.projecturl %}<a href="{{ page.projecturl }}" target="_blank" rel="noopener noreferrer">[Project]</a>{% endif %}
-        {% if page.codeurl %}<a href="{{ page.codeurl }}" target="_blank" rel="noopener noreferrer">[Code]</a>{% endif %}
-        {% if page.dataurl %}<a href="{{ page.dataurl }}" target="_blank" rel="noopener noreferrer">[Data]</a>{% endif %}
-        {% if page.modelurl %}<a href="{{ page.modelurl }}" target="_blank" rel="noopener noreferrer">[Model]</a>{% endif %}
+        {% if page.paperurl %}<a href="{{ page.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i>Paper</a>{% endif %}
+        {% if page.projecturl %}<a href="{{ page.projecturl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>Project</a>{% endif %}
+        {% if page.codeurl %}<a href="{{ page.codeurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-code" aria-hidden="true"></i>Code</a>{% endif %}
+        {% if page.dataurl %}<a href="{{ page.dataurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-database" aria-hidden="true"></i>Data</a>{% endif %}
+        {% if page.modelurl %}<a href="{{ page.modelurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>{% endif %}
       </p>
       {% if page.excerpt %}<p class="publication-detail__summary" itemprop="description">{{ page.excerpt }}</p>{% endif %}
+      {% if page.thumbnail %}<figure class="publication-detail__figure"><img src="{{ page.thumbnail }}" alt="{{ page.title }} project overview" loading="lazy"></figure>{% endif %}
       {% if page.highlights %}<section class="publication-detail__overview"><h2>Overview</h2><p>{{ page.highlights }}</p></section>{% endif %}
       <div class="publication-detail__content" itemprop="text">{{ content }}</div>
     </div>

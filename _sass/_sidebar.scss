@@ -156,6 +156,40 @@
   }
 }
 
+.author__quick-links {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 0.7rem;
+  font-family: $sans-serif;
+
+  a {
+    display: inline-grid;
+    width: 1.85rem;
+    height: 1.85rem;
+    place-items: center;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    color: #53606d;
+    text-decoration: none;
+    transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+
+    &:hover,
+    &:focus {
+      border-color: $link-color;
+      color: $link-color;
+      transform: translateY(-1px);
+    }
+  }
+
+  i {
+    font-size: 0.93rem;
+  }
+}
+
+.sidebar .author__urls-wrapper {
+  display: none;
+}
+
 .author__urls-wrapper {
   position: relative;
   display: table-cell;

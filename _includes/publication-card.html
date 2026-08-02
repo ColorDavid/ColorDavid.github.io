@@ -10,11 +10,11 @@
   <p class="publication-meta-row">
     <span class="publication-venue">{{ post.venue }}</span>
     <span class="publication-resources" aria-label="Publication resources">
-      {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">[Paper]</a>{% endif %}
-      {% if post.projecturl %}<a href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer">[Project]</a>{% endif %}
-      {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer">[Code]</a>{% endif %}
-      {% if post.dataurl %}<a href="{{ post.dataurl }}" target="_blank" rel="noopener noreferrer">[Data]</a>{% endif %}
-      {% if post.modelurl %}<a href="{{ post.modelurl }}" target="_blank" rel="noopener noreferrer">[Model]</a>{% endif %}
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i>Paper</a>{% endif %}
+      {% if post.projecturl %}<a href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>Project</a>{% endif %}
+      {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-code" aria-hidden="true"></i>Code</a>{% endif %}
+      {% if post.dataurl %}<a href="{{ post.dataurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-database" aria-hidden="true"></i>Data</a>{% endif %}
+      {% if post.modelurl %}<a href="{{ post.modelurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>{% endif %}
     </span>
   </p>
 </article>
