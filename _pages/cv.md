@@ -12,9 +12,9 @@ redirect_from:
 Education
 ======
 
-* Master of Engineering, Institute of Computing Technology, Chinese Academy of Sciences, 2026
+* M.Eng. in Computer Technology, Institute of Computing Technology, Chinese Academy of Sciences, 2023–2026
   * Advisor: Prof. Liang Li
-* B.S. in Data Science, Yuanpei College, Peking University, 2023
+* B.S. in Data Science, Yuanpei College, Peking University, 2019–2023
 
 Research Interests
 ======

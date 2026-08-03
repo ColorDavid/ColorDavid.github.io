@@ -77,20 +77,20 @@ redirect_from:
     </div>
     <ol class="education-list">
       <li>
-        <span class="education-mark" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span>
+        <span class="education-logo"><img src="{{ '/images/education/ict.png' | relative_url }}" alt="Institute of Computing Technology logo"></span>
         <div class="education-details">
-          <h3>Master of Engineering</h3>
+          <h3>M.Eng. in Computer Technology</h3>
           <p><a href="http://www.ict.ac.cn/">Institute of Computing Technology, Chinese Academy of Sciences</a></p>
         </div>
-        <time class="education-date" datetime="2026">2026</time>
+        <span class="education-date"><time datetime="2023">2023</time> – <time datetime="2026">2026</time></span>
       </li>
       <li>
-        <span class="education-mark" aria-hidden="true"><i class="fas fa-university"></i></span>
+        <span class="education-logo"><img src="{{ '/images/education/pku.png' | relative_url }}" alt="Peking University logo"></span>
         <div class="education-details">
           <h3>B.S. in Data Science</h3>
           <p><a href="https://yuanpei.pku.edu.cn/">Yuanpei College, Peking University</a></p>
         </div>
-        <time class="education-date" datetime="2023">2023</time>
+        <span class="education-date"><time datetime="2019">2019</time> – <time datetime="2023">2023</time></span>
       </li>
     </ol>
   </section>

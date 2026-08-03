@@ -493,15 +493,18 @@ body {
   padding: 0.48rem 0;
 }
 
-.education-mark {
-  display: grid;
+.education-logo {
+  display: block;
   width: 2rem;
   height: 2rem;
-  place-items: center;
-  border-radius: 0.46rem;
-  background: var(--site-accent-soft);
-  color: var(--site-accent);
-  font-size: 0.83rem;
+  overflow: hidden;
+}
+
+.education-logo img {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: 2rem;
 }
 
 .education-details h3 {

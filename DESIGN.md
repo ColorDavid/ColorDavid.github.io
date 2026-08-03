@@ -36,7 +36,7 @@
 - Let research artifacts carry visual interest; layout should not compete with figures or titles.
 - Use compact, labeled actions for publication resources instead of bare text links.
 - Use structure and typography rather than surrounding every module with a card.
-- Tradeoffs: small semantic icons replace institution logos until approved logo assets are available.
+- Tradeoffs: education uses the official ICT and Peking University marks, cropped to their circular emblems so the small row treatment remains legible.
 
 ## Visual language
 
@@ -45,12 +45,12 @@
 - Spacing/layout rhythm: wide desktop reading column, generous section gaps, compact rows for updates and credentials
 - Shape/radius/elevation: low-radius resource buttons and soft education icon fields; no decorative card shadows
 - Motion: brief hover feedback only; respect reduced-motion preferences
-- Imagery/iconography: research project figures and familiar Font Awesome / Academicons symbols with text labels
+- Imagery/iconography: research project figures, official school marks for education, and familiar Font Awesome / Academicons symbols with text labels
 
 ## Components
 
 - Existing components to reuse: `publication-card`, modern homepage sections, theme toggle, Font Awesome and Academicons
-- New/changed components: typed publication resource buttons, compact news rows, education rows with a semantic degree icon and linked school name
+- New/changed components: typed publication resource buttons, compact news rows, education rows with an official school mark and linked school name
 - Variants and states: paper, project, code, data, and model actions; hover and keyboard-focus styles must remain apparent
 - Token/component ownership: `_sass/_modern-home.scss` owns homepage and publication presentation; content remains in `_pages`, `_publications`, and `_data`
 
@@ -93,4 +93,4 @@
 
 ## Open questions
 
-- [ ] Consider replacing generic degree icons with approved ICT and Peking University logo assets if Jingyi wants institutional marks displayed.
+- [ ] No open design decision currently.
