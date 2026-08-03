@@ -7,15 +7,15 @@
   </div>
   <p class="publication-authors" itemprop="author">{{ post.card_authors | default: post.authors }}</p>
   {% if post.author_note %}<p class="publication-note">{{ post.author_note }}</p>{% endif %}
-  <p class="publication-meta-row">
+  <div class="publication-meta-row">
     <span class="publication-venue"><i class="fas fa-book-open" aria-hidden="true"></i>{{ post.venue }}</span>
-    <span class="publication-resources" aria-label="Publication resources">
-      {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i>Paper</a>{% endif %}
-      {% if post.projecturl %}<a href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>Project</a>{% endif %}
-      {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-code" aria-hidden="true"></i>Code</a>{% endif %}
-      {% if post.dataurl %}<a href="{{ post.dataurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-database" aria-hidden="true"></i>Data</a>{% endif %}
-      {% if post.modelurl %}<a href="{{ post.modelurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>{% endif %}
-    </span>
-  </p>
+    <nav class="publication-resources" aria-label="Resources for {{ post.title }}">
+      {% if post.paperurl %}<a class="publication-resource publication-resource--paper" href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i>Paper</a>{% endif %}
+      {% if post.projecturl %}<a class="publication-resource publication-resource--project" href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>Project</a>{% endif %}
+      {% if post.codeurl %}<a class="publication-resource publication-resource--code" href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-code" aria-hidden="true"></i>Code</a>{% endif %}
+      {% if post.dataurl %}<a class="publication-resource publication-resource--data" href="{{ post.dataurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-database" aria-hidden="true"></i>Data</a>{% endif %}
+      {% if post.modelurl %}<a class="publication-resource publication-resource--model" href="{{ post.modelurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>{% endif %}
+    </nav>
+  </div>
   </div>
 </article>

@@ -51,9 +51,9 @@ redirect_from:
       <h2 id="news-heading">News</h2>
     </div>
     <ol class="modern-news-list">
-      <li><time datetime="2026-06">Jun 2026</time><p><a href="https://arxiv.org/abs/2606.09669">SpatialWorld</a> is released as an arXiv preprint.</p></li>
-      <li><time datetime="2026-06">Jun 2026</time><p><a href="https://arxiv.org/abs/2507.16863">Position: Reasoning After Perception Means Reasoning Without Vision</a> appears at ICML 2026's Position Paper Track.</p></li>
-      <li><time datetime="2026-05">May 2026</time><p><a href="https://openreview.net/forum?id=59PrehaK6T">TreeReasoner</a> is accepted as an Oral at the 2nd ViSCALE workshop at CVPR 2026.</p></li>
+      <li><time datetime="2026-06">Jun 2026</time><p><span class="news-icon" aria-hidden="true">🧭</span><a href="https://arxiv.org/abs/2606.09669">SpatialWorld</a> is released as an arXiv preprint.</p></li>
+      <li><time datetime="2026-06">Jun 2026</time><p><span class="news-icon" aria-hidden="true">📄</span><a href="https://arxiv.org/abs/2507.16863">Position: Reasoning After Perception Means Reasoning Without Vision</a> appears at ICML 2026's Position Paper Track.</p></li>
+      <li><time datetime="2026-05">May 2026</time><p><span class="news-icon" aria-hidden="true">🎙️</span><a href="https://openreview.net/forum?id=59PrehaK6T">TreeReasoner</a> is accepted as an Oral at the 2nd ViSCALE workshop at CVPR 2026.</p></li>
     </ol>
   </section>
 
@@ -68,5 +68,30 @@ redirect_from:
         {% include publication-card.html post=post %}
       {% endfor %}
     </div>
+  </section>
+
+  <section class="home-section home-education" id="education" aria-labelledby="education-heading">
+    <div class="modern-section-heading">
+      <p>Background</p>
+      <h2 id="education-heading">Education</h2>
+    </div>
+    <ol class="education-list">
+      <li>
+        <span class="education-mark" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span>
+        <div class="education-details">
+          <h3>Master of Engineering</h3>
+          <p><a href="http://www.ict.ac.cn/">Institute of Computing Technology, Chinese Academy of Sciences</a></p>
+        </div>
+        <time class="education-date" datetime="2026">2026</time>
+      </li>
+      <li>
+        <span class="education-mark" aria-hidden="true"><i class="fas fa-university"></i></span>
+        <div class="education-details">
+          <h3>B.S. in Data Science</h3>
+          <p><a href="https://yuanpei.pku.edu.cn/">Yuanpei College, Peking University</a></p>
+        </div>
+        <time class="education-date" datetime="2023">2023</time>
+      </li>
+    </ol>
   </section>
 </div>

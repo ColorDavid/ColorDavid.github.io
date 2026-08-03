@@ -11,13 +11,13 @@ layout: default
       <h1 class="publication-detail__title" itemprop="headline">{{ page.title }}</h1>
       <p class="publication-authors" itemprop="author">{{ page.authors }}</p>
       {% if page.author_note %}<p class="publication-note">{{ page.author_note }}</p>{% endif %}
-      <p class="publication-resources" aria-label="Publication resources">
-        {% if page.paperurl %}<a href="{{ page.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i>Paper</a>{% endif %}
-        {% if page.projecturl %}<a href="{{ page.projecturl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>Project</a>{% endif %}
-        {% if page.codeurl %}<a href="{{ page.codeurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-code" aria-hidden="true"></i>Code</a>{% endif %}
-        {% if page.dataurl %}<a href="{{ page.dataurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-database" aria-hidden="true"></i>Data</a>{% endif %}
-        {% if page.modelurl %}<a href="{{ page.modelurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>{% endif %}
-      </p>
+      <nav class="publication-resources" aria-label="Resources for {{ page.title }}">
+        {% if page.paperurl %}<a class="publication-resource publication-resource--paper" href="{{ page.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i>Paper</a>{% endif %}
+        {% if page.projecturl %}<a class="publication-resource publication-resource--project" href="{{ page.projecturl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>Project</a>{% endif %}
+        {% if page.codeurl %}<a class="publication-resource publication-resource--code" href="{{ page.codeurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-code" aria-hidden="true"></i>Code</a>{% endif %}
+        {% if page.dataurl %}<a class="publication-resource publication-resource--data" href="{{ page.dataurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-database" aria-hidden="true"></i>Data</a>{% endif %}
+        {% if page.modelurl %}<a class="publication-resource publication-resource--model" href="{{ page.modelurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>{% endif %}
+      </nav>
       {% if page.thumbnail %}<figure class="publication-detail__figure"><img src="{{ page.thumbnail }}" alt="{{ page.title }} project overview" loading="lazy"></figure>{% endif %}
     </div>
   </article>
