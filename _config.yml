@@ -21,7 +21,7 @@ repository               : "ColorDavid/ColorDavid.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "color.jpg" # the name of the image file in /images/author
+  avatar           : "master.jpg" # the name of the image file in /images/author
   name             : "Jingyi Tang"
   pronouns         : # example: "she/her"
   bio              :

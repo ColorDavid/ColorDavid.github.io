@@ -12,7 +12,7 @@ redirect_from:
     <div class="home-hero__copy">
       <h1 id="home-title">Jingyi Tang</h1>
       <p class="home-hero__bio">I recently completed my M.Eng. in 2026 under the supervision of <a href="https://scholar.google.com/citations?user=Q-4mZnQAAAAJ&amp;hl=zh-CN">Liang Li</a>. Before that, I received my B.S. in Data Science from <a href="https://yuanpei.pku.edu.cn/">Yuanpei College, Peking University</a> in 2023.</p>
-      <p class="home-hero__research">My research focuses on multimodal agents, reliable video understanding, and evaluation-driven test-time scaling. I am particularly interested in interactive spatial reasoning and how evaluation feedback can make long-horizon model behavior more reliable.</p>
+      <p class="home-hero__research">My research centers on building multimodal agents that can perceive, reason, and act reliably in long-horizon environments. I study video understanding and interactive spatial reasoning, while developing benchmarks and evaluation-driven scaling methods that use feedback to improve grounded decision-making.</p>
       <div class="home-hero__links" aria-label="Contact links">
         <a href="mailto:tangjingyi23s@ict.ac.cn"><i class="fas fa-envelope" aria-hidden="true"></i><span>Email</span></a>
         <a href="https://scholar.google.com/citations?user=V3bIsMIAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Google Scholar</span></a>
@@ -20,7 +20,7 @@ redirect_from:
       </div>
     </div>
     <figure class="home-hero__portrait">
-      <img src="{{ '/images/color.jpg' | relative_url }}" alt="Jingyi Tang">
+      <img src="{{ '/images/master.jpg' | relative_url }}" alt="Jingyi Tang in graduation regalia">
     </figure>
   </section>
 
