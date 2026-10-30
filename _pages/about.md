@@ -14,7 +14,7 @@ redirect_from:
       <p class="home-hero__bio">I recently completed my M.Eng. in 2026 under the supervision of <a href="https://scholar.google.com/citations?user=Q-4mZnQAAAAJ&amp;hl=zh-CN">Liang Li</a>. Before that, I received my B.S. in Data Science from <a href="https://yuanpei.pku.edu.cn/">Yuanpei College, Peking University</a> in 2023.</p>
       <p class="home-hero__research">I study how multimodal agents can turn visual understanding into reliable action. My work connects <a href="https://github.com/Hongcheng-Gao/HAVEN">video understanding</a> and <a href="https://spatial-world.github.io/">interactive spatial reasoning</a> with <a href="https://engiworld.github.io/">professional engineering tasks</a>, and explores how <a href="https://www.wq-will.com/simpletes">evaluation feedback and test-time scaling</a> can improve complex problem solving.</p>
       <div class="home-hero__links" aria-label="Contact links">
-        <a href="mailto:tangjingyi23s@ict.ac.cn"><i class="fas fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+        <a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i><span>Email</span></a>
         <a href="https://scholar.google.com/citations?user=V3bIsMIAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Google Scholar</span></a>
         <a href="https://github.com/ColorDavid"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
       </div>

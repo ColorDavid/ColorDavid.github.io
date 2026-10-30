@@ -15,6 +15,9 @@ def check(condition, message)
 end
 
 check(home.css("h1").length == 1, "Homepage has one primary heading")
+check(home.at_css(".home-hero__links a[href^='mailto:']")["href"] == "mailto:colorfultjy@pku.edu.cn", "Homepage Email opens the current PKU address")
+check(!build.join("sitemap/index.html").exist?, "The template's public HTML sitemap is unpublished")
+check(build.join("sitemap.xml").file?, "The search-engine XML sitemap remains available")
 check(home.css(".publication-item").length == 7, "All seven publications remain on the homepage")
 check(archive.css(".publication-item").length == 7, "Publications archive includes all seven entries")
 check(home.at_css(".publication-heading h3").text.start_with?("Exploring Hallucination"), "HAVEN's formal TACL publication is listed first")
@@ -51,6 +54,7 @@ home.css(".publication-author-details").each do |disclosure|
 end
 
 [home, archive, detail, haven_detail].each do |doc|
+  check(doc.css(".site-footer__inner a[href*='sitemap']").empty?, "Footer does not expose the template sitemap")
   check(!doc.at_css("meta[name=description]")["content"].empty?, "Page has a non-empty search description")
   check(doc.css("a[target='_blank']").all? { |a| a["rel"].to_s.include?("noopener") }, "New-tab links use noopener")
   check(doc.css("img").all? { |img| !img["alt"].to_s.empty? }, "Images have descriptive alternative text")
@@ -63,4 +67,5 @@ end
 check(home.css(".home-hero__research a").length == 4, "Research statement retains links to concrete projects")
 check(home.css("script[src*=mathjax]").empty?, "Homepage avoids loading unused MathJax")
 check(home.at_css(".skip-link") && home.at_css("#main"), "Skip link has a valid main-content target")
+check(build.glob("**/*.html").none? { |path| path.read.include?("tangjingyi23s@ict.ac.cn") }, "No generated HTML retains the previous contact address")
 puts "Homepage checks passed."
