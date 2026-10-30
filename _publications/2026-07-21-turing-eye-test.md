@@ -11,6 +11,7 @@ codeurl: "https://github.com/TuringEyeTest/TuringEyeTest"
 dataurl: "https://huggingface.co/datasets/HongchengGao/TuringEyeTest"
 authors: "Hongcheng Gao*, Zihao Huang*, <strong>Jingyi Tang</strong>*, Lin Xu, Xinhao Li, Haoyang Li, Yue Liu, Minhua Lin, Xinlong Yang, Taihang Hu, Ge Wu, Baolong Bi, Hongyu Chen, Zhiqi Huang, Wentao Zhang"
 author_note: "* Equal contribution."
+card_authors: "Hongcheng Gao*, Zihao Huang*, <strong>Jingyi Tang</strong>*, …, Wentao Zhang"
 excerpt: "A position paper arguing that visual reasoning must retain access to visual representations rather than defer all reasoning to text space."
 highlights: "The paper uses the Turing Eye Test to expose perception failures that language-side reasoning cannot repair. It argues for reasoning-driven perception: systems should selectively reason within visual representations before task-critical signals are collapsed into text."
 ---

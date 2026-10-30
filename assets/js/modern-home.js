@@ -10,8 +10,13 @@
     savedTheme = null;
   }
 
-  if (savedTheme) {
+  var systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+  if (savedTheme === "light" || savedTheme === "dark") {
     root.dataset.theme = savedTheme;
+  } else {
+    savedTheme = null;
+    root.dataset.theme = systemTheme.matches ? "dark" : "light";
   }
 
   function updateThemeIcon() {
@@ -30,6 +35,7 @@
   if (toggle) {
     toggle.addEventListener("click", function () {
       root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+      savedTheme = root.dataset.theme;
       try {
         window.localStorage.setItem("site-theme", root.dataset.theme);
       } catch (error) {
@@ -39,13 +45,19 @@
     });
   }
 
-  if (backToTop) {
-    function updateBackToTop() {
-      backToTop.classList.toggle("is-visible", window.scrollY > 640);
-    }
+  if (systemTheme.addEventListener) {
+    systemTheme.addEventListener("change", function (event) {
+      if (savedTheme) return;
+      root.dataset.theme = event.matches ? "dark" : "light";
+      updateThemeIcon();
+    });
+  }
 
-    updateBackToTop();
-    window.addEventListener("scroll", updateBackToTop, { passive: true });
+  var topSentinel = document.getElementById("top-sentinel");
+  if (backToTop && topSentinel && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (entries) {
+      backToTop.classList.toggle("is-visible", !entries[0].isIntersecting);
+    }, { rootMargin: "640px 0px 0px 0px" }).observe(topSentinel);
   }
 
   var menuToggle = document.querySelector("#site-nav > button");
@@ -53,12 +65,30 @@
 
   if (menuToggle && hiddenLinks) {
     function updateMenuState() {
-      menuToggle.setAttribute("aria-expanded", String(!hiddenLinks.classList.contains("hidden")));
+      var expanded = !hiddenLinks.classList.contains("hidden");
+      menuToggle.setAttribute("aria-expanded", String(expanded));
+      menuToggle.setAttribute("aria-label", expanded ? "Close navigation" : "Open navigation");
+      menuToggle.classList.toggle("close", expanded);
+    }
+
+    function closeMenu() {
+      hiddenLinks.classList.add("hidden");
+      updateMenuState();
     }
 
     updateMenuState();
-    menuToggle.addEventListener("click", function () {
-      window.setTimeout(updateMenuState, 0);
+    new MutationObserver(updateMenuState).observe(hiddenLinks, { attributes: true, attributeFilter: ["class"] });
+    hiddenLinks.addEventListener("click", function (event) {
+      if (event.target.closest("a")) closeMenu();
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !hiddenLinks.classList.contains("hidden")) {
+        closeMenu();
+        menuToggle.focus();
+      }
+    });
+    document.addEventListener("click", function (event) {
+      if (!event.target.closest("#site-nav")) closeMenu();
     });
   }
 })();

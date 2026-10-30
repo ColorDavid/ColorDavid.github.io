@@ -3,9 +3,11 @@
 ## Source of truth
 
 - Status: Active
-- Last refreshed: 2026-08-03
+- Last refreshed: 2026-10-30
 - Primary product surfaces: homepage, publications index, publication detail pages
 - Evidence reviewed: `_pages/about.md`, `_includes/publication-card.html`, `_layouts/publication.html`, `_sass/_modern-home.scss`, and [Junquan Deng's homepage](https://pvz122.github.io/)
+- Applied guidance: [Landing page design skill](https://github.com/elayadesign/ai-design-skills/blob/main/skills/landing-page-design/SKILL.md) and [Redesign existing projects skill](https://github.com/elayadesign/redesign-skill/blob/main/skills/redesign-existing-projects/SKILL.md). Adopted type/spacing scales, focused in-place redesign, neutral surfaces, accessible states, and a stronger visual hierarchy. Marketing sections, decorative navigation, and new icon dependencies are intentionally omitted for this academic site.
+- EngiWorld metadata checked against its [project](https://engiworld.github.io/), [arXiv entry](https://arxiv.org/abs/2609.37686), and [repository](https://github.com/Hongcheng-Gao/EngiWorld). The publication date is the first arXiv submission, September 29, 2026. Author order is preserved; abbreviated lists expand to all authors.
 
 ## Brand
 
@@ -41,16 +43,16 @@
 ## Visual language
 
 - Color: warm light surface with restrained teal accent and an accessible dark theme
-- Typography: large, compact name treatment; legible sans-serif body copy; small all-caps section labels
-- Spacing/layout rhythm: wide desktop reading column, generous section gaps, compact rows for updates and credentials
-- Shape/radius/elevation: low-radius resource buttons and soft education icon fields; no decorative card shadows
+- Typography: Manrope at 400–700, 48px desktop name, 24px section headings, 18px publication titles, 16px body copy; no duplicated section eyebrows
+- Spacing/layout rhythm: 1040px reading column, 64px section gaps, larger project figures, compact news and education rows
+- Shape/radius/elevation: 4px resource buttons and 8px images; no decorative portrait frame, card outlines, cropping, or shadows
 - Motion: brief hover feedback only; respect reduced-motion preferences
 - Imagery/iconography: research project figures, official school marks for education, and familiar Font Awesome / Academicons symbols with text labels
 
 ## Components
 
 - Existing components to reuse: `publication-card`, modern homepage sections, theme toggle, Font Awesome and Academicons
-- New/changed components: typed publication resource buttons, compact news rows, education rows with an official school mark and linked school name
+- New/changed components: shared `publication-resources` include, two image-led project features, native author disclosures, compact news, official school marks, keyboard skip link
 - Variants and states: paper, project, code, data, and model actions; hover and keyboard-focus styles must remain apparent
 - Token/component ownership: `_sass/_modern-home.scss` owns homepage and publication presentation; content remains in `_pages`, `_publications`, and `_data`
 
@@ -75,7 +77,16 @@
 - Error: external links remain ordinary anchors and open in a new tab where applicable
 - Success: no submit flows
 - Disabled: not applicable
-- Offline/slow network: homepage remains readable when remote project images do not load
+- Offline/slow network: project images are stored locally and lazy loaded; the text and resource links remain usable independently
+
+## Image provenance
+
+- `images/projects/engiworld-showcase.jpg`: EngiWorld's official task-video poster, `https://engiworld.github.io/assets/videos/EngiWorld_88Tasks_70s_20261009.jpg`.
+- `images/projects/engiworld-overview.webp`: official benchmark figure, `https://engiworld.github.io/assets/figures/benchmark_overview.webp`.
+- `images/projects/spatialworld.png`: `https://raw.githubusercontent.com/Hongcheng-Gao/SpatialWorld/main/assets/spatialworld_main.png`.
+- `images/projects/simpletes.png`: `https://raw.githubusercontent.com/wq-will/SimpleTES/main/assets/simpletes-overview.png`.
+- `images/projects/haven.png`: `https://raw.githubusercontent.com/Hongcheng-Gao/HAVEN/main/Fig/Main.png`.
+- Assets are unchanged project materials, not generated illustrations. The full graduation photograph remains unchanged.
 
 ## Content voice
 
@@ -90,6 +101,7 @@
 - Performance constraints: add no new JavaScript or external UI framework for these patterns
 - Compatibility constraints: retain native links and server-rendered content
 - Test/screenshot expectations: validate generated markup, responsive CSS, and the production deployment after each change
+- Validation: GitHub Pages-compatible Jekyll build and `_scripts/check-homepage.rb`; browser checks at 1280px, 390px, and 320px, including author disclosures, theme switching, mobile navigation and Escape. Publication images are shown in full without cover-cropping.
 
 ## Open questions
 

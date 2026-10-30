@@ -5,6 +5,7 @@ permalink: /publication/2025-11-08-klear-agentforge
 date: 2025-11-08
 layout: publication
 venue: "arXiv preprint"
+card_authors: "Qi Wang, Hongzhi Zhang, Jia Fu, …, <strong>Jingyi Tang</strong>, …, Guorui Zhou"
 paperurl: "https://arxiv.org/abs/2511.05951"
 codeurl: "https://github.com/Kwai-Klear/Klear-AgentForge"
 modelurl: "https://huggingface.co/Kwai-Klear/Klear-AgentForge-8B"
