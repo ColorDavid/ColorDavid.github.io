@@ -1,6 +1,7 @@
 {% assign resource = include.publication %}
 <nav class="publication-resources" aria-label="Resources for {{ resource.title | escape }}">
   {% if resource.paperurl %}<a class="publication-resource publication-resource--paper" href="{{ resource.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>{% endif %}
+  {% if resource.arxivurl %}<a class="publication-resource" href="{{ resource.arxivurl }}" target="_blank" rel="noopener noreferrer"><i class="ai ai-arxiv" aria-hidden="true"></i><span>arXiv</span></a>{% endif %}
   {% if resource.projecturl %}<a class="publication-resource" href="{{ resource.projecturl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i><span>Project</span></a>{% endif %}
   {% if resource.codeurl %}<a class="publication-resource" href="{{ resource.codeurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-code" aria-hidden="true"></i><span>Code</span></a>{% endif %}
   {% if resource.dataurl %}<a class="publication-resource" href="{{ resource.dataurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-database" aria-hidden="true"></i><span>Data</span></a>{% endif %}

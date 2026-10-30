@@ -34,9 +34,9 @@ redirect_from:
         <img src="{{ '/images/projects/engiworld-showcase.jpg' | relative_url }}" alt="EngiWorld engineering tasks in FreeCAD, SolidWorks, Abaqus, Archicad, KiCad, and Blender" width="1920" height="1080" loading="lazy">
       </a>
       <div class="project-feature__copy">
-        <p class="project-category">Engineering agents · 2026</p>
-        <h3><a href="https://engiworld.github.io/" target="_blank" rel="noopener noreferrer">EngiWorld <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></h3>
+        <h3><a href="https://engiworld.github.io/" target="_blank" rel="noopener noreferrer">EngiWorld</a></h3>
         <p class="project-feature__title">What Can Frontier Agents Deliver in Professional Engineering Environments?</p>
+        <p class="project-category">Engineering agents</p>
         {% include publication-resources.html publication=engiworld %}
       </div>
     </article>
@@ -46,20 +46,20 @@ redirect_from:
         <img src="{{ '/images/projects/spatialworld.png' | relative_url }}" alt="SpatialWorld benchmark overview" width="1977" height="1534" loading="lazy">
       </a>
       <div class="project-feature__copy">
-        <p class="project-category">Spatial reasoning · 2026</p>
-        <h3><a href="https://spatial-world.github.io/" target="_blank" rel="noopener noreferrer">SpatialWorld <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></h3>
+        <h3><a href="https://spatial-world.github.io/" target="_blank" rel="noopener noreferrer">SpatialWorld</a></h3>
         <p class="project-feature__title">Benchmarking Interactive Spatial Reasoning of Multimodal Agents in Real-World Tasks</p>
+        <p class="project-category">Spatial reasoning</p>
         {% include publication-resources.html publication=spatialworld %}
       </div>
     </article>
     <div class="project-gallery">
       <a class="project-gallery__item" href="https://www.wq-will.com/simpletes" target="_blank" rel="noopener noreferrer">
         <span class="project-gallery__image"><img src="{{ '/images/projects/simpletes.png' | relative_url }}" alt="SimpleTES evaluation-driven scaling overview" width="3561" height="1242" loading="lazy"></span>
-        <span class="project-gallery__label">SimpleTES <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span><span class="project-category">Evaluation-driven scaling</span>
+        <span class="project-gallery__label">SimpleTES</span><span class="project-category">Evaluation-driven scaling</span>
       </a>
       <a class="project-gallery__item" href="https://github.com/Hongcheng-Gao/HAVEN" target="_blank" rel="noopener noreferrer">
         <span class="project-gallery__image"><img src="{{ '/images/projects/haven.png' | relative_url }}" alt="HAVEN video hallucination evaluation overview" width="4488" height="1730" loading="lazy"></span>
-        <span class="project-gallery__label">HAVEN <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span><span class="project-category">Reliable video understanding</span>
+        <span class="project-gallery__label">HAVEN</span><span class="project-category">Reliable video understanding</span>
       </a>
     </div>
   </section>
@@ -69,6 +69,7 @@ redirect_from:
       <h2 id="news-heading">News</h2>
     </div>
     <ol class="modern-news-list">
+      <li><time datetime="2026-10">Oct 2026</time><p><a href="{{ '/publication/2025-03-25-haven.html' | relative_url }}">HAVEN</a> is published in <a href="https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.813/139317/Exploring-Hallucination-of-Large-Multimodal-Models">TACL</a>.</p></li>
       <li><time datetime="2026-09">Sep 2026</time><p><a href="https://engiworld.github.io/">EngiWorld</a> is out, with <a href="https://arxiv.org/abs/2609.37686">paper</a>, <a href="https://github.com/Hongcheng-Gao/EngiWorld">code</a>, and <a href="https://huggingface.co/datasets/HongchengGao/EngiWorld-Tasks">tasks</a>.</p></li>
       <li><time datetime="2026-06">Jun 2026</time><p><a href="https://arxiv.org/abs/2606.09669">SpatialWorld</a> is released as an arXiv preprint.</p></li>
       <li><time datetime="2026-06">Jun 2026</time><p><a href="https://arxiv.org/abs/2507.16863">Position: Reasoning After Perception Means Reasoning Without Vision</a> appears at ICML 2026's Position Paper Track.</p></li>
@@ -79,7 +80,7 @@ redirect_from:
   <section class="home-section home-publications" id="publications" aria-labelledby="publications-heading">
     <div class="modern-section-heading modern-section-heading--with-link">
       <h2 id="publications-heading">Publications</h2>
-      <a class="section-link" href="{{ '/publications/' | relative_url }}">View all <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      <a class="section-link" href="{{ '/publications/' | relative_url }}">View all</a>
     </div>
     <div class="publication-list">
       {% assign publications = site.publications | sort: "date" | reverse %}
